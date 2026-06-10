@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #ff3f6c;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }    
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 180px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    color: #ff3f6c;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: #e0e0e0;
+}
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .container {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product p {
+            color: #ff3f6c;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product button {
+            background-color: #ff3f6c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .product button:hover {
+            background-color: #e0335d;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vibe Trend</h1>
+        <div class="search-container">
+            <input type="text" class="search-box" id="searchInput" placeholder="Search products...">
+            <button class="search-button" onclick="searchProducts()">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+               
+                <li><a href="#">Favourite</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <a href="html 3.html">
+            <img src="https://www.mychicobsession.com/wp-content/uploads/2020/12/timeless-capsule-wardrobe-136-of-164-scaled.jpg" alt="Women's Clothing">
+            <h2>Women's Clothing</h2>
+            <p>Starting at Rs.500</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="html 4.html">
+            <img src="https://i.pinimg.com/originals/6b/1d/88/6b1d88763a3d34eb36f5406e9d6a41fb.jpg" alt="Men's Clothing">
+            <h2>Men's Clothing</h2>
+            <p>Starting at Rs.500</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="html 5.html">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.rL2BSt3hGu4kuuVIDUZRygHaHZ&pid=Api&P=0&h=180" alt="Men's Shoes">
+            <h2>Men's Shoes</h2>
+            <p>Starting at Rs.700</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="html 6.html">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.TBr2gwVY3EFTArNyA8LZngHaFj&pid=Api&P=0&h=180" alt="Women's Shoes">
+            <h2>Women's Shoes</h2>
+            <p>Starting at Rs.700</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="html 7.html">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.gS3TFenRaBK3WKLmCy4QLgHaJd&pid=Api&P=0&h=180" alt="Men's Bags">
+            <h2>Men's Bags</h2>
+            <p>Starting at Rs.300 </p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="html 8.html">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.gKekfZzcteeK8y5jmHGqwAHaHa&pid=Api&P=0&h=180" alt="Women's Bags">
+            <h2>Women's Bags</h2>
+            <p>Starting at Rs.400</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="html 9.html">
+            <img src="https://i.ytimg.com/vi/J9Yz9b8Z6BE/maxresdefault.jpg" alt="Men's Watches">
+            <h2>Men's Watches</h2>
+            <p>Starting at Rs.500</p>
+        </a>
+        </div>
+        <div class="product">
+            <a href="html 10.html">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.fXrfLo9NlcAhGh-qdSdWHgHaFs&pid=Api&P=0&h=180" alt="Women's Watches">
+            <h2>Women's Watches</h2>
+            <p>Starting at Rs.500</p>
+            </a>
+            
+        </div>
+        
+        
+        
+        <div class="product">
+            <a href="html 11.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyWAZ0wNKXprs6mgUvcXrPRhFUuCNjvugzNA&s" alt="Beauty">
+            <h2>Beauty</h2>
+            <p>Starting at Rs.200</p>
+            </a>
+        </div>
+       
+        
+        
+       
+        <div class="product">
+            <a href="html 12.html">
+            <img src="https://cdn.cdnparenting.com/articles/2017/10/596353964-H.webp" alt="Toys , children and baby">
+            <h2>Toys , children and baby</h2>
+            <p>Starting at Rs.300</p>
+            </a>
+            
+        </div>
+        
+        
+        <div class="product">
+            <a href="html 13.html">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.7Au8sSgD3sKhERqekJXWVgHaE6&pid=Api&P=0&h=180" alt="Toys , children and baby">
+            <h2>Snacks</h2>
+            <p>Starting at Rs.20</p>
+            </a>
+            
+        </div>
+        </div>
+        <script>
+            function searchProducts() {
+                let input = document.getElementById('searchInput').value.toLowerCase();
+                let products = document.querySelectorAll('.product');
+    
+                products.forEach(product => {
+                    let title = product.querySelector('h2').innerText.toLowerCase();
+                    if (title.includes(input)) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+    <footer>
+        <p>&copy; 2025 Vibe Trend. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
